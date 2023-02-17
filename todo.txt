@@ -1,0 +1,11 @@
+- estilo CSS pagina principal
+
+- top sitios en pagina principal
+
+- 5 subpaginas:
+  - Santiago
+  - Leon
+  - Burgos
+  - Pamplona
+  - Saint-Jean-Pied-de-Port
+
