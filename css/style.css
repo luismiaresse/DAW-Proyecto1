@@ -10,6 +10,27 @@ img {
     align-self: center;
 }
 
+h2 {
+  font-size: 15 px;
+  margin-left: auto;
+}
+
+.sitios-home > div {
+  column-count: 3;
+}
+
+.sitios-home p {
+  text-align: left;
+}
+
+.sitios-home img {
+/*   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ */
+}
+
 /* Set the size of the div element that contains the map */
 #map {
     height: 400px; /* The height is 400 pixels */
