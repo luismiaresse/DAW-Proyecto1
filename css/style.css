@@ -1,14 +1,4 @@
-body {
-    font-family:Jetbrains Mono, SegoeUI, Arial;
-    font-size: 12px;
 
-}
-
-img {
-    max-width: 50%;
-    height: auto;
-    align-self: center;
-}
 
 h2 {
   font-size: 15 px;
@@ -31,8 +21,43 @@ h2 {
  */
 }
 
-/* Set the size of the div element that contains the map */
+body {
+    font-family: Jetbrains Mono, SegoeUI, Arial;
+    font-size: 12px;
+    margin: 2%;
+}
+
+img {
+    max-width: 50%;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 #map {
-    height: 400px; /* The height is 400 pixels */
-    width: 100%; /* The width is the width of the web page */
-  }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 90%;
+    border: 0;
+}
+
+#search {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+}
+
+#menu-nav {
+    list-style-type: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+}
