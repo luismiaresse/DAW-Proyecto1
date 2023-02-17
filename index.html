@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>El amigo del peregrino</title>
+    <title>Inicio - El amigo del peregrino</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/index.js"></script>
 <nav>
   <input type="text" id="search" placeholder="Busca una ciudad">
   <datalist id="paradas">
@@ -13,10 +16,15 @@
   </datalist>
 </nav>
 <body>
-  <img src="img/rutafrancesa.png" alt="Ruta francesa">
+  <img src="img/caminofrances.png" alt="Camino francés">
   <h1>Camino francés</h1>
   <p>El camino francés es el más popular de los caminos de Santiago. Es el que más peregrinos recibe cada año. Es el camino más corto y el más fácil de recorrer. Es el camino que más gente recomienda para hacer el Camino de Santiago.</p>
-  <h1>Parada destacada: Burgos</h1>
+  <h2>Parada destacada: Burgos</h2>
   <img src="img/destacada.png" alt="Lugar destacado">
+  <div id="map"></div>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
 </body>
 </html>

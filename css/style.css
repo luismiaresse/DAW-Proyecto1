@@ -1,0 +1,18 @@
+body {
+    font-family:Jetbrains Mono, SegoeUI, Arial;
+    font-size: 12px;
+
+}
+
+
+img {
+    max-width: 50%;
+    height: auto;
+    align-self: center;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px; /* The height is 400 pixels */
+    width: 100%; /* The width is the width of the web page */
+  }
