@@ -1,30 +1,49 @@
 
 
-h2 {
-  font-size: 15 px;
-  margin-left: auto;
+nav {
+  background: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
 }
 
-.sitios-home > div {
-  column-count: 3;
+nav a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
 }
 
-.sitios-home p {
-  text-align: left;
+nav a:hover {
+  background: #ddd;
+  color: black;
 }
+
+nav li {
+  /* Centra los elementos de la navbar */
+  display: inline;
+}
+
 
 .sitios-home img {
-/*   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
- */
+  align-self: center;
+  /* min-width: 300px!important;
+  max-width: 500px!important; */
+  height: 250px!important;
+  width: auto!important;
+  max-width:500px;
 }
+
 
 body {
     font-family: Jetbrains Mono, SegoeUI, Arial;
     font-size: 12px;
-    margin: 2%;
+    padding: 5%;
+    /* Evita solapamiento de contenido con la navbar */
+    margin-top: 10%;   
 }
 
 img {
@@ -49,7 +68,8 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    margin-top: 1%;
+    width: 50%;
     text-align: center;
 }
 

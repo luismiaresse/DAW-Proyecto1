@@ -9,3 +9,4 @@
   - Pamplona
   - Saint-Jean-Pied-de-Port
 
+-docu: añadir más imágenes y menos texto
