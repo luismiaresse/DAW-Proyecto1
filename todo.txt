@@ -10,3 +10,13 @@
   - Saint-Jean-Pied-de-Port
 
 -docu: añadir más imágenes y menos texto
+
+-js:
+	-Hover en imágenes hace que aparezca la descripción
+	-Icono de búsqueda que al clicar se despliega el cuadro de texto
+	-Hover en apartado de navbar despliega links
+	-Modo oscuro
+	
+
+-ideas para mejorar página:
+	-Navegación con paradas hace que baje en la página a la parada clicada

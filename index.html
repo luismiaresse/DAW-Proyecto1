@@ -8,19 +8,11 @@
     <!-- IMPORTANTE: El orden de link afecta a la prioridad de cada CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
 </head>
 
 <body>
+  <div id="navbar">
   <nav>
-    <input list="paradas" id="search" placeholder="Busca una parada">
-    <datalist id="paradas">
-      <option value="Santiago de Compostela">
-      <option value="León">
-      <option value="Burgos">
-      <option value="Pamplona">
-      <option value="Saint-Jean-Pied-de-Port"> 
-    </datalist>
     <!-- Menú -->
     <ul id="menu-nav">
       <li><a href="index.html">Inicio</a></li>
@@ -29,74 +21,93 @@
       <li><a href="pages/burgos.html">Burgos</a></li>
       <li><a href="pages/pamplona.html">Pamplona</a></li>
       <li><a href="pages/saint-jean-pied-de-port.html">Saint-Jean-Pied-de-Port</a></li>
+      <!-- Dropdown -->
+      <button id="dropbtn">Más</button>
+      <ul id="dropdown" style="display: none;">
+        <li><a href="pages/sarria.html">Sarria</a></li>
+        <li><a href="pages/estella.html">Estella</a></li>
+        <li><a href="pages/logrono.html">Logroño</a></li>
+      </ul>
     </ul>
-  </nav>
-  <!-- <figure>
-    <img src="img/caminofrances.png" alt="Camino francés">
-  </figure> -->
-  <h1>Camino francés</h1>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d3125700.556412189!2d-5.277426216683586!3d40.087858363279395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e2!4m5!1s0xd50d5616cb5d49f%3A0x27d43cc64a91e1c7!2sSaint-Jean-Pied-de-Port%2C%20France!3m2!1d43.163140999999996!2d-1.23811!4m5!1s0xd50928ba31965c7%3A0x4e6e903632cb2e90!2sPamplona!3m2!1d42.812526!2d-1.6457745!4m5!1s0xd5aab4130b390b1%3A0xf98252918a168870!2zTG9ncm_DsW8!3m2!1d42.4627195!2d-2.4449852!4m5!1s0xd45fcbe3dc20327%3A0xa1f5beab8e71aa1!2sBurgos!3m2!1d42.350465899999996!2d-3.6893545!4m5!1s0xd379a9a0d5e1bd9%3A0x7d849ffad4f1eef3!2zTGXDs24!3m2!1d42.5983611!2d-5.5718779!4m5!1s0xd3048097fbf82ad%3A0x9004c74b09000a64!2sSarria!3m2!1d42.7808389!2d-7.4140766!4m5!1s0xd2efe4326414707%3A0xa18e63b9d0a316c5!2sCathedral%20of%20Santiago%20de%20Compostela%2C%20Praza%20do%20Obradoiro%2C%20s%2Fn%2C%2015704%20Santiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!3m2!1d42.8805962!2d-8.5446412!5e0!3m2!1sen!2ses!4v1676626122715!5m2!1sen!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <p>El camino francés es el más popular de los caminos de Santiago. Es el que más peregrinos recibe cada año. Es el camino más corto y el más fácil de recorrer. Es el camino que más gente recomienda para hacer el Camino de Santiago.</p>
-  <figure>
-    <h2>Parada destacada: Burgos</h2>
-    <img src="img/destacada.png" alt="Lugar destacado">
-  </figure>
-  <div class="sitios-home">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <div class="container-fluid">
-      <h2>Top Restaurantes</h2>
-      <div class="row">
-        <div class="col-sm">
-          <figure>
-            <h3>Pepa a Loba (Santiago)</h3>
-            <p>Este centrico restaurante en la zona vieja de Santiago te embaucara con su localizacion y sus sabores</p>  
-            <img src="img/santiago/pepa_a_loba.jpg" alt="Pepa a Loba (Santiago)">
-          </figure>
-        </div>
-        <div class="col-sm">
-          <figure>
-            <h3>La Comtienda (Burgos)</h3>
-            <p>No te vayas de Burgos sin probar las maravillas de este tradicional restaurante</p>
-            <img src="img/burgos/lacomtienda.jpg" alt="La Comtienda (Burgos)">
-          </figure>
-        </div>
-        <div class="col-sm">
-          <figure>
-            <h3>Oillarburu (Saint-Jean-Pied-de-Port)</h3>
-            <p>Prueba las mejores delicias de la cocina vasca en la primera parada del camino frances</p>
-            <img src="img/saintjean/oillarburu.jpg" alt="Oillarburu (Saint-Jean-Pied-de-Port)">
-          </figure>
+    <!-- Buscador -->
+    <input list="paradas" id="search" placeholder="Busca una parada">
+    <datalist id="paradas">
+      <option value="Santiago de Compostela">
+      <option value="León">
+      <option value="Burgos">
+      <option value="Pamplona">
+      <option value="Saint-Jean-Pied-de-Port"> 
+    </datalist>
+  </nav>
+  </div>
+
+  <div id="main">
+    <h1>Camino francés</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d3125700.556412189!2d-5.277426216683586!3d40.087858363279395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e2!4m5!1s0xd50d5616cb5d49f%3A0x27d43cc64a91e1c7!2sSaint-Jean-Pied-de-Port%2C%20France!3m2!1d43.163140999999996!2d-1.23811!4m5!1s0xd50928ba31965c7%3A0x4e6e903632cb2e90!2sPamplona!3m2!1d42.812526!2d-1.6457745!4m5!1s0xd5aab4130b390b1%3A0xf98252918a168870!2zTG9ncm_DsW8!3m2!1d42.4627195!2d-2.4449852!4m5!1s0xd45fcbe3dc20327%3A0xa1f5beab8e71aa1!2sBurgos!3m2!1d42.350465899999996!2d-3.6893545!4m5!1s0xd379a9a0d5e1bd9%3A0x7d849ffad4f1eef3!2zTGXDs24!3m2!1d42.5983611!2d-5.5718779!4m5!1s0xd3048097fbf82ad%3A0x9004c74b09000a64!2sSarria!3m2!1d42.7808389!2d-7.4140766!4m5!1s0xd2efe4326414707%3A0xa18e63b9d0a316c5!2sCathedral%20of%20Santiago%20de%20Compostela%2C%20Praza%20do%20Obradoiro%2C%20s%2Fn%2C%2015704%20Santiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!3m2!1d42.8805962!2d-8.5446412!5e0!3m2!1sen!2ses!4v1676626122715!5m2!1sen!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>El camino francés es el más popular de los caminos de Santiago. Es el que más peregrinos recibe cada año. Es el camino más corto y el más fácil de recorrer. Es el camino que más gente recomienda para hacer el Camino de Santiago.</p>
+    <figure>
+      <h2>Parada destacada: Burgos</h2>
+      <img src="img/destacada.png" alt="Lugar destacado">
+    </figure>
+    <div class="sitios-home">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+      <div class="container-fluid">
+        <h2>Top Restaurantes</h2>
+        <div class="row">
+          <div class="col-sm">
+            <figure>
+              <h3>Pepa a Loba (Santiago)</h3>
+              <p>Este centrico restaurante en la zona vieja de Santiago te embaucara con su localizacion y sus sabores</p>  
+              <img src="img/santiago/pepa_a_loba.jpg" alt="Pepa a Loba (Santiago)">
+            </figure>
+          </div>
+          <div class="col-sm">
+            <figure>
+              <h3>La Comtienda (Burgos)</h3>
+              <p>No te vayas de Burgos sin probar las maravillas de este tradicional restaurante</p>
+              <img src="img/burgos/lacomtienda.jpg" alt="La Comtienda (Burgos)">
+            </figure>
+          </div>
+          <div class="col-sm">
+            <figure>
+              <h3>Oillarburu (Saint-Jean-Pied-de-Port)</h3>
+              <p>Prueba las mejores delicias de la cocina vasca en la primera parada del camino frances</p>
+              <img src="img/saintjean/oillarburu.jpg" alt="Oillarburu (Saint-Jean-Pied-de-Port)">
+            </figure>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <div class="container-fluid">
-      <h2>Top Pubs</h2>
-      <div class="row">
-        <div class="col-sm">
-          <figure>
-            <h3>Ruta (Santiago)</h3>
-            <p>En esta discoteca-pub te lo pasaras en grande con musica actual</p>  
-            <img src="img/santiago/discoteca-ruta.jpeg" alt="Ruta (Santiago)">
-          </figure>
-        </div>
-        <div class="col-sm">
-          <figure>
-            <h3>Gabana (León)</h3>
-            <p>Si los sitios de jovenes no es tu ambiente, esta discoteca de mediana edad sera tu espacio de disfrute</p>
-            <img src="img/leon/gabana.jpg" alt="Gabana (León)">
-          </figure>
-        </div>
-        <div class="col-sm">
-          <figure>
-            <h3>Cooper Club (Burgos)</h3>
-            <p>¿Buscas algo intermedio entre discoteca y pub? Cooper Club será tu sitio.</p>
-            <img src="img/burgos/cooper.jpg" alt="Cooper Club (Burgos)">
-          </figure>
+      
+      <div class="container-fluid">
+        <h2>Top Pubs</h2>
+        <div class="row">
+          <div class="col-sm">
+            <figure>
+              <h3>Ruta (Santiago)</h3>
+              <p>En esta discoteca-pub te lo pasaras en grande con musica actual</p>  
+              <img src="img/santiago/discoteca-ruta.jpeg" alt="Ruta (Santiago)">
+            </figure>
+          </div>
+          <div class="col-sm">
+            <figure>
+              <h3>Gabana (León)</h3>
+              <p>Si los sitios de jovenes no es tu ambiente, esta discoteca de mediana edad sera tu espacio de disfrute</p>
+              <img src="img/leon/gabana.jpg" alt="Gabana (León)">
+            </figure>
+          </div>
+          <div class="col-sm">
+            <figure>
+              <h3>Cooper Club (Burgos)</h3>
+              <p>¿Buscas algo intermedio entre discoteca y pub? Cooper Club será tu sitio.</p>
+              <img src="img/burgos/cooper.jpg" alt="Cooper Club (Burgos)">
+            </figure>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <script src="js/index.js"></script>
 </body>
 </html>

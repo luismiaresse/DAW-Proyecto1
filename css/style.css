@@ -1,12 +1,11 @@
 
 
 nav {
+  display: block;
   background: #333;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: fixed;
-  top: 0;
   width: 100%;
-  padding: 0;
 }
 
 nav a {
@@ -27,6 +26,12 @@ nav li {
   display: inline;
 }
 
+.main {
+  font-family: Jetbrains Mono, SegoeUI, Arial;
+  font-size: 14px;
+  /* Evita solapamiento de contenido con la navbar */
+  position: static;
+}
 
 .sitios-home img {
   align-self: center;
@@ -38,13 +43,6 @@ nav li {
 }
 
 
-body {
-    font-family: Jetbrains Mono, SegoeUI, Arial;
-    font-size: 12px;
-    padding: 5%;
-    /* Evita solapamiento de contenido con la navbar */
-    margin-top: 10%;   
-}
 
 img {
     max-width: 50%;
