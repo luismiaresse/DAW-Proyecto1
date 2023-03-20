@@ -1,36 +1,87 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+} */
 
+/* Variables */
+:root {
+  --nav-size: 80px;
+  --nav-margins: 3%;
+  --nav-background: #333;
+}
+
+body {
+  font-family: Jetbrains Mono, SegoeUI, Arial;
+  font-size: 14px;
+}
 
 nav {
+  background: var(--nav-background);
+  position: sticky;
+  top: 0;
+  color: white;
+  line-height: var(--nav-size);
+}
+
+nav ul {
   display: block;
-  background: #333;
-  /* overflow: hidden; */
-  position: fixed;
-  width: 100%;
+  float: right;
+  margin-right: var(--nav-margins);
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
 }
 
 nav a {
-  display: inline-block;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   color: white;
+  margin-left: var(--nav-margins);
+  /* line-height: var(--nav-size); */
+  /* vertical-align: middle; */
 }
 
 nav a:hover {
-  background: #ddd;
+  background-color: #ddd;
   color: black;
 }
 
-nav li {
-  /* Centra los elementos de la navbar */
-  display: inline;
+.nav-dropdown {
+  display: inline-block;
+  line-height: 30px;
 }
 
-.main {
-  font-family: Jetbrains Mono, SegoeUI, Arial;
-  font-size: 14px;
-  /* Evita solapamiento de contenido con la navbar */
-  position: static;
+.nav-dropdown:hover .nav-dropdown-content {
+  display: block;
+}
+
+.nav-dropdown-content a {
+  display: block;
+  background: var(--nav-background);
+  text-decoration: none;
+  margin: 0;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 8px;
+}
+
+
+
+#content {
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .sitios-home img {
@@ -55,10 +106,8 @@ img {
 
 #map {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     height: 400px;
-    width: 90%;
+    width: 100%;
     border: 0;
 }
 
@@ -71,11 +120,3 @@ img {
     text-align: center;
 }
 
-#menu-nav {
-    list-style-type: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    text-align: center;
-}
