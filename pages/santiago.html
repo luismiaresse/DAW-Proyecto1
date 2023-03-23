@@ -10,7 +10,7 @@
 </head>
 
 <body class="body">
-  <nav class="barra-busqueda">
+  <nav>
     <input list="paradas" id="search" placeholder="Busca una parada">
     <datalist id="paradas">
       <option value="Santiago de Compostela">
@@ -19,6 +19,15 @@
       <option value="Pamplona">
       <option value="Saint-Jean-Pied-de-Port"> 
     </datalist>
+    <!-- Menú -->
+    <ul id="menu-nav">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="./santiago.html">Santiago de Compostela</a></li>
+      <li><a href="./leon.html">León</a></li>
+      <li><a href="./burgos.html">Burgos</a></li>
+      <li><a href="./pamplona.html">Pamplona</a></li>
+      <li><a href="./saint-jean-pied-de-port.html">Saint-Jean-Pied-de-Port</a></li>
+    </ul>
   </nav>
 
   <div class="info-general">
@@ -37,13 +46,14 @@
   <hr>
   <div class="destacados">
     <h3>Lugares destacados</h3>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm">
-          <h5>Restaurantes</h5>
+          <h5 id="titulo">Restaurantes</h5>
           <figure>
             <img src="../img/santiago/la-galiciana.jpg" alt="La Galiciana">
           </figure>
+          <p class="texto-imagen">Disfruta de los mejores sabores santiagueses</p>
           <p><a href="https://www.mercadolagaliciana.es/">La Galiciana</a></p>
         </div>
         <hr>
@@ -57,5 +67,23 @@
       </div>
     </div>
   </div>
+
+  <script>
+    document.getElementById("titulo").style.color="red";
+    document.getElementById("titulo").addEventListener("click", changeColor);
+
+    function changeColor(){
+      document.getElementById("titulo").style.color="green";
+    }
+
+    document.getElementsByTagName("figure").addEventListener("click", mostrarTexto);
+
+    function mostrarTexto(){
+      alert("Has clicado una imagen!");
+      /*document.getElementsByClassName(".texto-imagen").style.display="none";*/
+    }
+    
+  </script>
+
 </body>
 </html>
