@@ -77,6 +77,11 @@ nav a:hover {
   margin-top: 8px;
 }
 
+.boton {
+  display: inline;
+  margin: auto;
+}
+
 
 
 #content {

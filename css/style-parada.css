@@ -1,23 +1,40 @@
 
 .info-general{
-  margin-bottom: 5%;
+  padding: 20px;
 }
 
-.info-general > h1 {
-  margin-bottom: 3%;
+.info-general img{
+  padding:20px;
 }
 
-.info-general > p {
-  text-align:justify;
+.info-general p {
+  text-align:center;
   font-size:small;
+  padding: 20px;
 }
 
-.destacados {
-  margin-top: 3%;
-  padding: 1%;
+
+.sitios-parada img{
+  align-self: center;
+/*  min-width: 300px!important;
+  max-width: 500px!important; */
+  height: 250px!important;
+  width: auto!important;
+  max-width:500px;  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
-.destacados .col-sm > h5{
-  margin-top: 2%;
-  margin-bottom: 5%;
+.sitios-parada h5{
+  padding-left: 50px;
+  display: block;
+}
+
+.col-sm{
+  padding:10px;
+}
+
+.sitios-parada p{
+  text-align: center;
 }
