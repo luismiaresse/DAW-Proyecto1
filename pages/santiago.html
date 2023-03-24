@@ -13,12 +13,12 @@
   <nav id="navbar">
     <!-- Menú -->
     <div class="container-fluid nav-container">
-      <a class="navbar-brand" href="index.html">El amigo del peregrino</a>
+      <a class="navbar-brand" href="../index.html">El amigo del peregrino</a>
       <button class="boton">Modo oscuro</button>
       <ul id="nav-links">
         <li><a href="../index.html">Inicio</a></li>
-        <li class="nav-dropdown">
-          <a href="#">Paradas</a>
+        <li class="nav-dropdown" id="dropdown">
+          <a href="#" id="dropbtn">Paradas</a>
           <div class="nav-dropdown-content">
             <a href="./santiago.html">Santiago de Compostela</a>
             <a href="./leon.html">León</a>
@@ -106,42 +106,7 @@
       </div>
     </div>
   </div>
-
-  <script>
-    
-    document.getElementsByClassName("boton")[0].addEventListener("click", function(){
-
-      //console.log(this.nodeName + ", " + this.nodeType + ", " + this.innerText)
-
-      if (this.innerText == "Modo oscuro"){
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white"
-        this.innerText = "Modo claro";
-      }
-      else{
-        document.body.style.backgroundColor = "white";
-        document.body.style.color = "black";
-        this.innerText = "Modo oscuro";
-      }
-    });
-
-    const imagenSitio = document.getElementById("imagen-sitio");
-
-    imagenSitio.addEventListener("click", function(){
-      console.log("altura: " + this.height)
-      //this.style.height = '"' + this.style.height * 1.2 + '"'; 
-      this.height = '50px'; 
-      
-    })
-
-    /*
-    function hacerGrande(){
-      height = "500px";
-      width = "500px";
-      console.log("Click")
-    }
-*/
-  </script>
-
+  <script src="../js/index.js"></script>
+  
 </body>
 </html>
