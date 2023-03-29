@@ -1,8 +1,8 @@
 REQUISITOS PROYECTO
 - CSS responsivo (p. ej. cambio de layout según tamaño de pantalla)
 - JS: 
-	- 5 métodos de acceso al DOM
-	- 3 triggers a eventos
+	(H) 5 métodos de acceso al DOM
+	(H) 3 triggers a eventos
 	- Uso de objetos jQuery
 	- Uso de JES6
 	- Uso de expresiones regulares
@@ -10,12 +10,13 @@ REQUISITOS PROYECTO
 
 ------------------------------
 IDEAS PARA HACER
+
 - estilo CSS pagina principal
 
 - top sitios en pagina principal
 
 - 5 subpaginas:
-  - Santiago
+  (H) Santiago
   - Leon
   - Burgos
   - Pamplona
@@ -26,9 +27,8 @@ IDEAS PARA HACER
 -js:
 	-Hover en imágenes hace que aparezca la descripción
 	-Icono de búsqueda que al clicar se despliega el cuadro de texto
-	-Hover en apartado de navbar despliega links
-	-Modo oscuro
-	-Smooth scroll con JQuery
+	(H) Hover en apartado de navbar despliega links
+	(H) Modo oscuro
 	
 
 -ideas para mejorar página:
