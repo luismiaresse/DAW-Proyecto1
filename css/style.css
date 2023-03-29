@@ -11,11 +11,19 @@
   --nav-size: 80px;
   --nav-margins: 3%;
   --nav-background: #333;
+  --header-fonts: Kanit, sans-serif;
+  --fonts: Roboto, sans-serif;
+
 }
 
 body {
-  font-family: Jetbrains Mono, SegoeUI, Arial;
   font-size: 14px;
+  font-family: var(--fonts);
+}
+
+/* Aplicar fuentes para los  */
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--header-fonts);
 }
 
 nav {
@@ -24,6 +32,7 @@ nav {
   top: 0;
   color: white;
   line-height: var(--nav-size);
+  z-index: 1;
 }
 
 nav ul {
@@ -42,8 +51,17 @@ nav a {
   text-decoration: none;
   color: white;
   margin-left: var(--nav-margins);
-  /* line-height: var(--nav-size); */
-  /* vertical-align: middle; */
+}
+
+.boton-tema {
+  margin-left: 0;
+}
+
+.navbar-brand {
+  padding: 14px 16px;
+  font-family: Pathway Gothic One, SegoeUI, Arial;
+  font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
 nav a:hover {
@@ -51,6 +69,8 @@ nav a:hover {
   color: black;
 }
 
+
+/* Selector de paradas */
 .nav-dropdown {
   display: inline-block;
   line-height: 30px;
@@ -72,15 +92,12 @@ nav a:hover {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  margin-top: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  z-index: 2;
+  margin-top: 6px;
 }
+/* Fin selector */
 
-.boton {
-  display: inline;
-  margin: auto;
-}
 
 
 
@@ -94,7 +111,6 @@ nav a:hover {
   /* min-width: 300px!important;
   max-width: 500px!important; */
   height: 250px!important;
-  width: auto!important;
   max-width:500px;
 }
 
@@ -114,14 +130,5 @@ img {
     height: 400px;
     width: 100%;
     border: 0;
-}
-
-#search {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    width: 50%;
-    text-align: center;
 }
 

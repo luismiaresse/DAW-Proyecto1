@@ -28,6 +28,7 @@ IDEAS PARA HACER
 	-Icono de búsqueda que al clicar se despliega el cuadro de texto
 	-Hover en apartado de navbar despliega links
 	-Modo oscuro
+	-Smooth scroll con JQuery
 	
 
 -ideas para mejorar página:

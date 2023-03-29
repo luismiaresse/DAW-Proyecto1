@@ -7,10 +7,10 @@
 
 
 function mostrarLinks() {
-    var lista = document.getElementById("dropdown");
-    if (lista.style.display === "none") {
-        lista.style.display = "block";
-    }
+  var lista = document.getElementById("dropdown");
+  if (lista.style.display === "none") {
+      lista.style.display = "block";
+  }
 }
 
 var dropbtn = document.getElementById("dropbtn");
@@ -24,10 +24,10 @@ dropbtn.addEventListener("mouseover", mostrarLinks);
 // ---------------------------------------------------------------
 
 function esconderLinks() {
-    var lista = document.getElementById("dropdown");
-    if (lista.style.display === "block") {
-        lista.style.display = "none";
-    }
+  var lista = document.getElementById("dropdown");
+  if (lista.style.display === "block") {
+      lista.style.display = "none";
+  }
 }
 
 dropbtn.addEventListener("mouseout", esconderLinks);
@@ -39,20 +39,20 @@ dropbtn.addEventListener("mouseout", esconderLinks);
 // DOM: getElementsByClassName(), element.innerText
 // ---------------------------------------------------------------
 
-var boton = document.getElementsByClassName("boton")[0];
+var botonTema = document.getElementsByClassName("boton-tema")[0];
 
-//document.getElementsByClassName("boton")[0].addEventListener("click", function(){
-boton.addEventListener("click", function(){
+botonTema.addEventListener("click", function(){
   console.log("click")
-
-  if (this.innerText == "Modo oscuro"){
+  textoClaro = "\u{2600} Modo claro";
+  textoOscuro = "\u{263D} Modo oscuro";
+  if (this.innerText == textoOscuro){
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white"
-    this.innerText = "Modo claro";
+    this.innerText = textoClaro;
   }
-  else{
+  else {
     document.body.style.backgroundColor = "white";
     document.body.style.color = "black";
-    this.innerText = "Modo oscuro";
+    this.innerText = textoOscuro;
   }
 });

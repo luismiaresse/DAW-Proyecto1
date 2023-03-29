@@ -1,16 +1,36 @@
 
 .info-general{
-  padding: 20px;
+  /* padding: 20px; */
+  position: relative;
+  text-align: center;
 }
-
+/* 
 .info-general img{
   padding:20px;
-}
+} */
 
 .info-general p {
   text-align:center;
   font-size:small;
+  /* padding: 20px; */
+}
+
+.titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
+  color: white;
+  width: 100%;
+}
+
+
+
+.info-imagen img {
+  max-width: 100%;
+  width: 100%;
 }
 
 
