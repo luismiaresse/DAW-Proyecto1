@@ -38,8 +38,8 @@
   align-self: center;
 /*  min-width: 300px!important;
   max-width: 500px!important; */
-  height: 250px!important;
-  width: auto!important;
+  height: 250px;
+  width: auto;
   max-width:500px;  
   margin-top: 10px;
   margin-bottom: 10px;

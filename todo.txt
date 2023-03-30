@@ -29,6 +29,7 @@ IDEAS PARA HACER
 	-Icono de búsqueda que al clicar se despliega el cuadro de texto
 	(H) Hover en apartado de navbar despliega links
 	(H) Modo oscuro
+	(H) Regex para validar formulario
 	
 
 -ideas para mejorar página:

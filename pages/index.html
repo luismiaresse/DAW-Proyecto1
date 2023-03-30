@@ -68,6 +68,9 @@
             </figure>
           </div>
         </div>
+        <div class="row sitios-ocultos" style="visibility: none;"></div>
+      </div>
+      <button class="btn btn-primary" id="boton-cargar-sitios">Ver más</button>
       </div>
       <div class="container-fluid">
         <h2>Top Pubs</h2>
@@ -94,7 +97,6 @@
             </figure>
           </div>
         </div>
-      </div>
     </div>
     <div class="spacer"></div>
     <div class="opiniones">
@@ -140,8 +142,9 @@
         <input type="email" id="email" name="email" placeholder="Tu email">
         <label for="comentario">Comentario</label>
         <textarea id="comentario" name="comentario" placeholder="Deja aquí tu comentario"></textarea>
-        <input type="submit" value="Enviar">
+        <input type="button" id="boton-enviar-comentario" value="Enviar">
       </form>
+      <p id="error-comentarios" style="visibility: hidden;"></p>
     </div>
     <div class="spacer"></div>
 
@@ -157,6 +160,7 @@
     <div class="spacer"></div>
     <p style="text-align: center;">Copyright &copy; 2023 - El amigo del peregrino</p>
   </footer>
+  <script src="../js/jquery-3.6.4.min.js"></script>
   <script src="../js/index.js"></script>
 </body>
 </html>
