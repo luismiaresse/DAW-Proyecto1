@@ -1,11 +1,3 @@
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-} */
-
 /* Variables */
 :root {
   --nav-size: 80px;
@@ -13,7 +5,7 @@
   --nav-background: #333;
   --header-fonts: Kanit, sans-serif;
   --fonts: Roboto, sans-serif;
-
+  --spacer-size: 40px;
 }
 
 body {
@@ -50,7 +42,6 @@ nav a {
   padding: 14px 16px;
   text-decoration: none;
   color: white;
-  margin-left: var(--nav-margins);
 }
 
 .boton-tema {
@@ -62,6 +53,7 @@ nav a {
   font-family: Pathway Gothic One, SegoeUI, Arial;
   font-weight: bold;
   letter-spacing: 0.1em;
+  margin-left: var(--nav-margins);
 }
 
 nav a:hover {
@@ -98,37 +90,63 @@ nav a:hover {
 }
 /* Fin selector */
 
+.spacer {
+  height: var(--spacer-size);
+}
 
+/* CSS Responsivo: esconde links y botón de tema cuando la ventana es demasiado pequeña */
+@media screen and (max-width: 750px) {
+  #nav-links {
+    display: none; /* escondemos el elemento cuando la pantalla es muy pequeña */
+  }
+}
 
+@media screen and (max-width: 400px) {
+  .boton-tema {
+    display: none; /* escondemos el elemento cuando la pantalla es muy pequeña */
+  }
+}
 
 #content {
   margin-left: 3%;
   margin-right: 3%;
 }
 
-.sitios-home img {
+
+
+
+#content img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   align-self: center;
-  /* min-width: 300px!important;
-  max-width: 500px!important; */
-  height: 250px!important;
-  max-width:500px;
 }
 
 
-
-img {
-    max-width: 50%;
-    display: block;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+footer {
+  background-color: var(--nav-background);
+  color: #fff;
+  padding: 20px;
 }
 
-#map {
-    display: block;
-    height: 400px;
-    width: 100%;
-    border: 0;
+.social-links {
+  text-align: center;
 }
 
+.social-links a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links img {
+  display: inline;
+  height: 30px;
+  width: 30px;
+}

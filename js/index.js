@@ -56,3 +56,8 @@ botonTema.addEventListener("click", function(){
     this.innerText = textoOscuro;
   }
 });
+
+// JQUERY
+// import $ from 'jquery';
+// $(document).ready(function(){
+// });
