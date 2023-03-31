@@ -1,8 +1,4 @@
 
-// ---------------------------------------------------------------
-// DIFUMINAR IMAGEN Y MOSTRAR TEXTO
-// JQuery
-// ---------------------------------------------------------------
 
 let imagenDifuminada = {
   opacity: 0.5,
@@ -16,30 +12,36 @@ let textoOculto = {
   visibility: "hidden"
 }
 
-$(".sitios-parada p").css(textoOculto);
-
-
 let textoVisible = {
   visibility: "visible",
   position: 'relative',
-  left: '-10%'
+  left: '-20%'
 }
+
+$(".sitios-parada p").css(textoOculto);
+
+
+// ---------------------------------------------------------------
+// DIFUMINAR IMAGEN Y MOSTRAR TEXTO
+// JQuery: parents(), find(), text(), css()
+// ---------------------------------------------------------------
 
 $(".sitios-parada img").mouseover(function() {
 
+  console.log($(this).parents("figure").find("p").text())
+
   $(this).css(imagenDifuminada);
-  $(this).siblings("p").css(textoVisible);
-  var htmlActual = $(this).html();
-  $(this).html('<a href="https://www.mercadolagaliciana.es/">' + htmlActual + '</a>');
-
-  console.log(htmlActual)
-
+  $(this).parents("figure").find("p").css(textoVisible);
 });
 
+
+// ---------------------------------------------------------------
+// OPACAR IMAGEN Y OCULTAR TEXTO
+// JQuery: parents(), find(), text(), css()
+// ---------------------------------------------------------------
 
 $(".sitios-parada img").mouseout(function() {
 
   $(this).css(imagenOpaca);
-  $(this).siblings("p").css(textoOculto);
-
+  $(this).parents("figure").find("p").css(textoOculto);
 });

@@ -1,13 +1,8 @@
 
 .info-general{
-  /* padding: 20px; */
   position: relative;
   text-align: center;
 }
-/* 
-.info-general img{
-  padding:20px;
-} */
 
 .info-general p {
   text-align:center;
@@ -26,21 +21,14 @@
   width: 100%;
 }
 
-
-
 .info-imagen img {
   max-width: 100%;
   width: 100%;
 }
 
-
 .sitios-parada img{
-  align-self: center;
-/*  min-width: 300px!important;
-  max-width: 500px!important; */
   height: 250px;
-  width: auto;
-  max-width:500px;  
+  width:350px;  
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px;

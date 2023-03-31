@@ -3,9 +3,9 @@ REQUISITOS PROYECTO
 - JS: 
 	(H) 5 métodos de acceso al DOM
 	(H) 3 triggers a eventos
-	- Uso de objetos jQuery
-	- Uso de JES6
-	- Uso de expresiones regulares
+	(H) Uso de objetos jQuery
+	(H) Uso de JES6
+	(H) Uso de expresiones regulares
 	- Carga de XML y JSON (de 2 de estas formas: Objeto XMLHttpRequest, JQuery, API Fetch) usando un servidor HTTP
 
 ------------------------------
@@ -35,7 +35,6 @@ IDEAS PARA HACER
 -ideas para mejorar página:
 	-Navegación con paradas hace que baje en la página a la parada clicada
 	
-
 - pequeños errores:
   - modo oscuro ya no funciona en Santiago.html
   - botones de barra navegación desaparecen al achicar la pantalla
