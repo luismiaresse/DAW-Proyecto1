@@ -65,6 +65,8 @@ botonTema.addEventListener("click", function(){
 // ---------------------------------------------------------------
 // BOTON MOSTRAR MÁS SITIOS
 // Evento: click
+// DOM: createElement(), classList, innerHTML, appendChild(), style, getElementById(), addEventListener()
+// ---------------------------------------------------------------
 
 let botonCargarSitios = document.getElementById("boton-cargar-sitios");
 
@@ -92,7 +94,10 @@ if (botonCargarSitios != null) {
 
 
 // ---------------------------------------------------------------
-// REGEX PARA VALIDAR FORMULARIO DE COMENTARIOS
+// VALIDAR FORMULARIO DE COMENTARIO
+// JQuery
+// Expresiones Regulares
+// ---------------------------------------------------------------
 
 let nombre = $("#nombre");
 let correo = $("#email");

@@ -35,3 +35,7 @@ IDEAS PARA HACER
 -ideas para mejorar página:
 	-Navegación con paradas hace que baje en la página a la parada clicada
 	
+
+- pequeños errores:
+  - modo oscuro ya no funciona en Santiago.html
+  - botones de barra navegación desaparecen al achicar la pantalla
