@@ -74,7 +74,7 @@ nav a:hover {
 
 .nav-dropdown-content a {
   display: block;
-  background: var(--nav-background);
+  background-color: var(--nav-background);
   text-decoration: none;
   margin: 0;
 }
@@ -97,13 +97,13 @@ nav a:hover {
 /* CSS Responsivo: esconde links y botón de tema cuando la ventana es demasiado pequeña */
 @media screen and (max-width: 750px) {
   #nav-links {
-    display: none; /* escondemos el elemento cuando la pantalla es muy pequeña */
+    display: none;
   }
 }
 
 @media screen and (max-width: 400px) {
   .boton-tema {
-    display: none; /* escondemos el elemento cuando la pantalla es muy pequeña */
+    display: none;
   }
 }
 

@@ -47,16 +47,26 @@ let textoClaro = "\u{2600} Modo claro";
 let textoOscuro = "\u{263D} Modo oscuro";
 let botonTema = document.getElementsByClassName("boton-tema")[0];
 
-botonTema.addEventListener("click", function(){
+botonTema.addEventListener("click", function() {
   console.log("Cambio de tema");
   if (this.innerText == textoOscuro) {
-    document.body.style.backgroundColor = "black";
+    document.body.style.backgroundColor = "#151819";
     document.body.style.color = "white"
+    // Bucle parte de JES6
+    for (elem of document.getElementById("formulario-comentarios").children) {
+      elem.style.backgroundColor = "#151819";
+      elem.style.color = "white";
+    }
     this.innerText = textoClaro;
   }
   else {
     document.body.style.backgroundColor = "white";
-    document.body.style.color = "black";
+    document.body.style.color = "#151819";
+    // Bucle parte de JES6
+    for (elem of document.getElementById("formulario-comentarios").children) {
+      elem.style.backgroundColor = "white";
+      elem.style.color = "#151819";
+    }
     this.innerText = textoOscuro;
   }
 });
@@ -94,16 +104,14 @@ if (botonCargarSitios != null) {
 
 
 // ---------------------------------------------------------------
-// VALIDAR FORMULARIO DE COMENTARIO
-// JQuery
-// Expresiones Regulares
-// ---------------------------------------------------------------
+// REGEX PARA VALIDAR FORMULARIO DE COMENTARIOS
+// Función flecha, sintaxis de JES6, expresiones regulares
 
 let nombre = $("#nombre");
 let correo = $("#email");
 let comentario = $("#comentario");
 
-$("#boton-enviar-comentario").click(function() {
+$("#boton-enviar-comentario").click(() => {
   let errorText = "";
   let errorId = 0;
   let errorStyle = {
