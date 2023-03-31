@@ -95,19 +95,28 @@ nav a:hover {
 }
 
 /* CSS Responsivo: esconde links y botón de tema cuando la ventana es demasiado pequeña */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
   #nav-links {
     display: none;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .boton-tema {
     display: none;
   }
 }
 
+#login-container {
+  position: relative;
+  float: right;
+  visibility: hidden;
+  margin-right: var(--nav-margins);
+  top: var(--nav-size) + 10px;
+}
+
 #content {
+  display: block;
   margin-left: 3%;
   margin-right: 3%;
 }
@@ -126,6 +135,19 @@ nav a:hover {
   display: block; 
   margin-left: auto; 
   margin-right: auto;
+}
+
+
+#formulario-comentarios input, #boton-enviar-comentario, #login-form input {
+  margin-bottom: 10px;
+}
+
+#comentario {
+  width: 30%; 
+  height: 100px; 
+  margin-bottom: 10px; 
+  margin-left: 1%; 
+  vertical-align: middle;
 }
 
 

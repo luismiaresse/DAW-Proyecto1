@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Kanit&family=Pathway Gothic One">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-  </head>
+</head>
 
 <body>
   <nav id="navbar">
@@ -15,8 +15,7 @@
       <a class="navbar-brand" href="index.html">El amigo del peregrino</a>
       <a class="boton-tema" href="javascript:void(0)">&#9789; Modo oscuro</a>
       <ul id="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li class="nav-dropdown" id="dropdown">
+        <li class="nav-dropdown">
           <a href="#" id="dropbtn">Paradas</a>
           <div class="nav-dropdown-content">
             <a href="santiago.html">Santiago de Compostela</a>
@@ -27,9 +26,32 @@
           </div>
         </li>
         <li><a href="about.html">Sobre nosotros</a></li>
+        <li><div class="botones-sesion">
+          <a class="btn btn-secondary boton-iniciar-sesion" href="#">Iniciar sesión</a>
+          <a class="btn btn-primary boton-registrarse" href="#">Registrarse</a>
+        </div></li>
       </ul>
     </div>
   </nav>
+  <div class="spacer" style="line-height: 10px;"></div>
+  <div id="login-container">
+    <form id="login-form">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required placeholder="Email">
+      <br>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required placeholder="Contraseña">
+      <div id="campos-registro" style="display: inline;">
+        <br>
+        <label for="password">Repite contraseña:</label>
+        <input type="password" id="password" name="password" required placeholder="Repite contraseña">
+        <br>
+        <label for="name">Nombre de usuario:</label>
+        <input type="text" id="name" name="name" required placeholder="Nombre de usuario">
+      </div>
+      <p id="error-login" style="display: none;"></p>
+    </form>
+  </div>
   <div class="spacer"></div>
   <div id="content">
     <div class="intro">
@@ -51,7 +73,7 @@
               <h4>Pepa a Loba</h4>
               <h6>Santiago</h6>
               <a><img src="../img/santiago/pepa_a_loba.jpg" alt="Pepa a Loba (Santiago)"></a>
-              <p>Este céntrico restaurante en la zona vieja de Santiago te embaucará con sus sabores</p>
+              <p>Este céntrico restaurante en la zona vieja de Santiago te embaucará con sus sabores</p>  
             </figure>
           </div>
           <div class="col-sm">
@@ -142,19 +164,21 @@
     <div id="comentarios">
       <h2>Déjanos un comentario</h2>
       <form id="formulario-comentarios">
-        <label for="nombre">Nombre</label>
+        <label for="name">Nombre</label>
         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+        <br>
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Tu email">
+        <br>
         <label for="comentario">Comentario</label>
         <textarea id="comentario" name="comentario" placeholder="Deja aquí tu comentario"></textarea>
-        <input type="button" id="boton-enviar-comentario" value="Enviar">
+        <br>
+        <input type="button" id="boton-enviar-comentario" class="btn btn-primary" value="Enviar">
       </form>
-      <p id="error-comentarios" style="visibility: hidden;"></p>
+      <p id="error-comentarios" style="display: none;"></p>
     </div>
-    <div class="spacer"></div>
-
   </div>
+  <div class="spacer"></div>
   <footer>
     <div class="social-links">
       <p>Síguenos en nuestras redes sociales</p>
