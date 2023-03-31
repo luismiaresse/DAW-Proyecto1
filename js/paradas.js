@@ -15,10 +15,10 @@ let textoOculto = {
 let textoVisible = {
   visibility: "visible",
   position: 'relative',
-  left: '-20%'
+  left: '0%'
 }
 
-$(".sitios-parada p").css(textoOculto);
+$(".sitios-parada figure p").css(textoOculto);
 
 
 // ---------------------------------------------------------------
@@ -28,7 +28,7 @@ $(".sitios-parada p").css(textoOculto);
 
 $(".sitios-parada img").mouseover(function() {
 
-  console.log($(this).parents("figure").find("p").text())
+  //console.log($(this).parents("figure").find("p").text())
 
   $(this).css(imagenDifuminada);
   $(this).parents("figure").find("p").css(textoVisible);
@@ -44,4 +44,31 @@ $(".sitios-parada img").mouseout(function() {
 
   $(this).css(imagenOpaca);
   $(this).parents("figure").find("p").css(textoOculto);
+});
+
+
+// ---------------------------------------------------------------
+// ASIGNAR LINK A LA IMAGEN DEL SITIO
+// JES6: bucle for, variables let
+// JSON: links.json (links de los restaurantes)
+// JQuery: mouseover(), parent(), find(), html(), attr()
+// API Fetch: fetch(), then()
+// ---------------------------------------------------------------
+
+let obtenerLink = function (json, nombreLocal){
+  for (let key in json) {
+    if (key == nombreLocal){
+      return json[key];
+    }
+  }
+  return -1;
+}
+
+$(".sitios-parada img").mouseover(function() {
+
+  let nombreLocal = $(this).parent().parent().find("h5").html()
+  
+  fetch('../ajax/links.json')
+  .then(response => response.json())
+  .then(data => $(this).parent().attr('href', obtenerLink(data, nombreLocal)))
 });
