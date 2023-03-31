@@ -66,8 +66,10 @@ let obtenerLink = function (json, nombreLocal){
 
 $(".sitios-parada img").mouseover(function() {
 
-  let nombreLocal = $(this).parent().parent().find("h5").html()
-  
+  let nombreLocal = $(this).parent().parent().find("h4,h5").html()
+
+  console.log(nombreLocal)
+
   fetch('../ajax/links.json')
   .then(response => response.json())
   .then(data => $(this).parent().attr('href', obtenerLink(data, nombreLocal)))
