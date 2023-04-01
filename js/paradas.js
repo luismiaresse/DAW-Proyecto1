@@ -26,7 +26,7 @@ $(".sitios-parada figure p").css(textoOculto);
 // JQuery: parents(), find(), text(), css()
 // ---------------------------------------------------------------
 
-$(".sitios-parada img").mouseover(function() {
+$(".sitios-parada img, .sitio-destacado img").mouseover(function() {
 
   //console.log($(this).parents("figure").find("p").text())
 
@@ -40,7 +40,7 @@ $(".sitios-parada img").mouseover(function() {
 // JQuery: parents(), find(), text(), css()
 // ---------------------------------------------------------------
 
-$(".sitios-parada img").mouseout(function() {
+$(".sitios-parada img, .sitio-destacado img").mouseout(function() {
 
   $(this).css(imagenOpaca);
   $(this).parents("figure").find("p").css(textoOculto);
