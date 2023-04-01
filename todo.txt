@@ -6,7 +6,7 @@ REQUISITOS PROYECTO
 	(H) Uso de objetos jQuery
 	(H) Uso de JES6
 	(H) Uso de expresiones regulares
-	- Carga de XML y JSON (de 2 de estas formas: Objeto XMLHttpRequest, JQuery, API Fetch) usando un servidor HTTP
+	(H) Carga de XML y JSON (de 2 de estas formas: Objeto XMLHttpRequest, JQuery, API Fetch) usando un servidor HTTP
 
 ------------------------------
 IDEAS PARA HACER
