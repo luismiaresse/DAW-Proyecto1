@@ -13,10 +13,9 @@
   <nav id="navbar">
     <div class="container-fluid nav-container">
       <a class="navbar-brand" href="index.html">El amigo del peregrino</a>
-      <a class="boton-tema" href="#">&#9789; Modo oscuro</a>
+      <a class="boton-tema" href="javascript:void(0)">&#9789; Modo oscuro</a>
       <ul id="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li class="nav-dropdown" id="dropdown">
+        <li class="nav-dropdown">
           <a href="#" id="dropbtn">Paradas</a>
           <div class="nav-dropdown-content">
             <a href="santiago.html">Santiago de Compostela</a>
@@ -27,22 +26,68 @@
           </div>
         </li>
         <li><a href="about.html">Sobre nosotros</a></li>
+        <li><div class="botones-sesion">
+          <a class="btn btn-secondary boton-iniciar-sesion" href="#">Iniciar sesión</a>
+          <a class="btn btn-primary boton-registrarse" href="#">Registrarse</a>
+        </div></li>
       </ul>
     </div>
   </nav>
   <div class="spacer"></div>
   <div id="content">
+    <div id="login-container">
+      <form id="login-form">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="login-email" required placeholder="Email">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="login-password" required placeholder="Contraseña">
+        <div id="campos-registro">
+          <label for="password">Repite contraseña:</label>
+          <input type="password" id="login-password-repeat" required placeholder="Repite contraseña">
+          <label for="name">Nombre de usuario:</label>
+          <input type="text" id="login-name" required placeholder="Nombre de usuario">
+        </div>
+        <p id="error-login" style="display: none;"></p>
+      </form>
+      <div class="spacer"></div>
+    </div>
     <h1>Sobre nosotros</h1>
     <br>
     <h2>¿Qué es esto?</h2>
-    <p>El amigo del peregrino es un proyecto que nace con la intención de ayudar a los peregrinos que se dirigen a Santiago de Compostela. En esta página encontrarás información sobre las paradas más importantes del camino de Santiago, así como consejos y recomendaciones para que tu viaje sea lo más cómodo y agradable posible.</p>
+    <p>El amigo del peregrino es un proyecto que nace con la intención de ayudar a los peregrinos que se dirigen a Santiago de Compostela. 
+      En esta página encontrarás información sobre las paradas más importantes del camino de Santiago, así como consejos y recomendaciones 
+      para que tu viaje sea lo más cómodo y agradable posible. Elegimos los lugares de interés si cumplen con los siguientes requisitos:
+    <ul>
+      <li>Que estén a menos de 10 km de la parada</li>
+      <li>Que sean de calidad</li>
+      <li>Que sean accesibles</li>
+      <li>Que tengan buenas críticas en Google Maps y en suficiente cantidad</li>
+    </ul></p>
     <br>
     <h2>¿Quiénes somos?</h2>
-    <p>Somos un grupo de estudiantes de la USC que hemos decidido crear esta página para ayudar a los peregrinos que se dirigen a Santiago de Compostela a descubrir una variedad de lugares de calidad por los que pasar.</p>
+    <p>Somos un grupo de estudiantes de la Universidad de Santiago de Compostela </p>
     <br>
     <h2>¿Cómo se ha hecho?</h2>
-    <p>El amigo del peregrino ha sido creado con HTML, CSS y JavaScript. Para el diseño de la página hemos utilizado Bootstrap.</p>
+    <p>El amigo del peregrino ha sido creado con HTML, CSS y JavaScript. Para el diseño de la página hemos utilizado Bootstrap,
+       y hemos empleado librerías como JQuery o AJAX, entre otros. Puedes echar un vistazo en el apartado de 'Colaboradores y tecnologías'.</p>
     <br>
+    <h2>Colaboradores y tecnologías</h2>
+    <div id="colaboradores">
+      <p>Este proyecto ha sido posible gracias a:</p>
+      <ul>
+        <li><a href="https://github.com/luismiaresse" target="_blank">Colaborador: Luis Miguel Ares Seijas</a></li>
+        <li><a href="https://github.com/alejandro-aybar" target="_blank">Colaborador: Alejandro Aybar</a></li>
+        <!-- JQuery -->
+        <li><a href="https://jquery.com/" target="_blank">JQuery</a></li>
+        <!-- Bootstrap -->
+        <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+        <!-- AJAX -->
+        <li><a href="https://developer.mozilla.org/es/docs/Web/Guide/AJAX" target="_blank">AJAX</a></li>
+        <!-- Google Maps API -->
+        <li><a href="https://developers.google.com/maps" target="_blank">Google Maps API</a></li>
+        <!-- Google Fonts -->
+        <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+    </div>
   </div>
   <footer>
     <div class="social-links">
@@ -56,5 +101,7 @@
     <p style="text-align: center;">Copyright &copy; 2023 - El amigo del peregrino</p>
   </footer>
   <script src="../js/jquery-3.6.4.min.js"></script>
+  <script src="../js/sesion.js"></script>
+  <script src="../js/tema.js"></script>
 </body>
 </html>

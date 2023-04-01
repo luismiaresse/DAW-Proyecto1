@@ -6,11 +6,16 @@
   --header-fonts: Kanit, sans-serif;
   --fonts: Roboto, sans-serif;
   --spacer-size: 40px;
+  --margin-form: 10px;
 }
 
 body {
   font-size: 14px;
   font-family: var(--fonts);
+}
+
+.spacer {
+  height: var(--spacer-size);
 }
 
 /* Aplicar fuentes para los  */
@@ -42,6 +47,8 @@ nav a {
   padding: 14px 16px;
   text-decoration: none;
   color: white;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .boton-tema {
@@ -61,6 +68,10 @@ nav a:hover {
   color: black;
 }
 
+#nav-username:hover {
+  background-color: var(--nav-background);
+  color: white;
+}
 
 /* Selector de paradas */
 .nav-dropdown {
@@ -90,9 +101,30 @@ nav a:hover {
 }
 /* Fin selector */
 
-.spacer {
-  height: var(--spacer-size);
+#login-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 20%;
+  margin-right: 0;
+  margin-left: 80%;
+  margin-top: var(--margin-form);
 }
+
+#login-form label {
+  margin-bottom: var(--margin-form);
+}
+
+#login-form input {
+  max-width: 100%;
+}
+
+#login-form div {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+
 
 /* CSS Responsivo: esconde links y botón de tema cuando la ventana es demasiado pequeña */
 @media screen and (max-width: 1000px) {
@@ -108,11 +140,10 @@ nav a:hover {
 }
 
 #login-container {
-  position: relative;
-  float: right;
-  visibility: hidden;
+  top: 0;
+  right: 0;
+  display: none;
   margin-right: var(--nav-margins);
-  top: var(--nav-size) + 10px;
 }
 
 #content {
@@ -138,23 +169,30 @@ nav a:hover {
 }
 
 
-#formulario-comentarios input, #boton-enviar-comentario, #login-form input {
-  margin-bottom: 10px;
+#formulario-comentarios {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-#comentario {
-  width: 30%; 
-  height: 100px; 
-  margin-bottom: 10px; 
-  margin-left: 1%; 
-  vertical-align: middle;
+#formulario-comentarios input, #boton-enviar-comentario, #login-form input, textarea, #formulario-comentarios label {
+  margin-bottom: var(--margin-form);
 }
 
+#boton-enviar-comentario {
+  margin-left: auto;
+  margin-right: auto;
+}
 
+/* Footer */
 footer {
   background-color: var(--nav-background);
   color: #fff;
   padding: 20px;
+  bottom: 0;
+  width: 100%;
 }
 
 .social-links {
@@ -175,3 +213,4 @@ footer {
   height: 30px;
   width: 30px;
 }
+/* Fin footer */
