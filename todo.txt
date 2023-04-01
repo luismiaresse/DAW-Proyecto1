@@ -40,7 +40,7 @@ IDEAS PARA HACER
 DOCUMENTACIÓN:
 
 // ORGANIZACIÓN
-L - Inventario de contenido
+(H) - Inventario de contenido
 A - Arquitectura de la información
 (H) Estructura de ficheros
 
