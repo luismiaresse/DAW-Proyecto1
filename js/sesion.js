@@ -121,6 +121,8 @@ function checkLogin(xmlDoc) {
     }
   }
   console.log("Usuario incorrecto");
+  errorText = "El correo o la contraseña no son correctos.";
+  showLoginError();
   return false;
 }
 

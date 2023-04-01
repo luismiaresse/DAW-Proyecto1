@@ -18,7 +18,7 @@ body {
   height: var(--spacer-size);
 }
 
-/* Aplicar fuentes para los  */
+/* Aplicar fuentes para las cabeceras */
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--header-fonts);
 }
@@ -123,7 +123,6 @@ nav a:hover {
   flex-direction: column;
   max-width: 100%;
 }
-
 
 
 /* CSS Responsivo: esconde links y botón de tema cuando la ventana es demasiado pequeña */

@@ -27,9 +27,11 @@
           </div>
         </li>
         <li><a href="about.html">Sobre nosotros</a></li>
+        <li><a id="nav-username" style="display: none;"></a></li>
         <li><div class="botones-sesion">
           <a class="btn btn-secondary boton-iniciar-sesion" href="#">Iniciar sesión</a>
           <a class="btn btn-primary boton-registrarse" href="#">Registrarse</a>
+          <a class="btn btn-secondary boton-cerrar-sesion" href="javascript:void(0)" style="display: none;">Cerrar sesión</a>
         </div></li>
       </ul>
     </div>
@@ -118,6 +120,20 @@
         </div>
       </div>
     </div>
+    <div id="comentarios">
+      <h2>Déjanos un comentario</h2>
+      <form id="formulario-comentarios">
+        <label for="name">Nombre:</label>
+        <input type="text" id="comentario-nombre" name="nombre" placeholder="Tu nombre">
+        <label for="email">Email:</label>
+        <input type="email" id="comentario-email" name="email" placeholder="Tu email">
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario-comentario" name="comentario" placeholder="Deja aquí tu comentario"></textarea>
+        <input type="button" id="boton-enviar-comentario" class="btn btn-primary" value="Enviar">
+        <p id="mensaje-comentarios" style="display: none;"></p>
+      </form>
+      <div class="spacer"></div>
+    </div>
   </div>
   <footer>
     <div class="social-links">
@@ -134,5 +150,6 @@
   <script src="../js/paradas.js"></script>
   <script src="../js/sesion.js"></script>
   <script src="../js/tema.js"></script>
+  <script src="../js/comentarios.js"></script>
 </body>
 </html>
