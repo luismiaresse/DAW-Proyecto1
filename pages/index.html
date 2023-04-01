@@ -26,34 +26,33 @@
           </div>
         </li>
         <li><a href="about.html">Sobre nosotros</a></li>
+        <li><a id="nav-username" style="display: none;"></a></li>
         <li><div class="botones-sesion">
           <a class="btn btn-secondary boton-iniciar-sesion" href="#">Iniciar sesión</a>
           <a class="btn btn-primary boton-registrarse" href="#">Registrarse</a>
+          <a class="btn btn-secondary boton-cerrar-sesion" href="javascript:void(0)" style="display: none;">Cerrar sesión</a>
         </div></li>
       </ul>
     </div>
   </nav>
-  <div class="spacer" style="line-height: 10px;"></div>
-  <div id="login-container">
-    <form id="login-form">
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required placeholder="Email">
-      <br>
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" name="password" required placeholder="Contraseña">
-      <div id="campos-registro" style="display: inline;">
-        <br>
-        <label for="password">Repite contraseña:</label>
-        <input type="password" id="password" name="password" required placeholder="Repite contraseña">
-        <br>
-        <label for="name">Nombre de usuario:</label>
-        <input type="text" id="name" name="name" required placeholder="Nombre de usuario">
-      </div>
-      <p id="error-login" style="display: none;"></p>
-    </form>
-  </div>
   <div class="spacer"></div>
   <div id="content">
+    <div id="login-container">
+      <form id="login-form">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="login-email" required placeholder="Email">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="login-password" required placeholder="Contraseña">
+        <div id="campos-registro">
+          <label for="password">Repite contraseña:</label>
+          <input type="password" id="login-password-repeat" required placeholder="Repite contraseña">
+          <label for="name">Nombre de usuario:</label>
+          <input type="text" id="login-name" required placeholder="Nombre de usuario">
+        </div>
+        <p id="error-login" style="display: none;"></p>
+      </form>
+      <div class="spacer"></div>
+    </div>
     <div class="intro">
       <h1>Descubre el camino francés</h1>
       <p>Los mejores lugares para visitar, comer y disfrutar de la ruta, en un mismo sitio</p>
@@ -61,7 +60,7 @@
     <div class="spacer"></div>
     <figure>
       <h2>Parada destacada: Burgos</h2>
-      <img src="../img/destacada.png" alt="Lugar destacado">
+      <img src="../img/index/destacada.png" alt="Lugar destacado">
     </figure>
     <div class="spacer"></div>
     <div class="sitios-parada">  
@@ -164,21 +163,18 @@
     <div id="comentarios">
       <h2>Déjanos un comentario</h2>
       <form id="formulario-comentarios">
-        <label for="name">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
-        <br>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Tu email">
-        <br>
-        <label for="comentario">Comentario</label>
-        <textarea id="comentario" name="comentario" placeholder="Deja aquí tu comentario"></textarea>
-        <br>
+        <label for="name">Nombre:</label>
+        <input type="text" id="comentario-nombre" name="nombre" placeholder="Tu nombre">
+        <label for="email">Email:</label>
+        <input type="email" id="comentario-email" name="email" placeholder="Tu email">
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario-comentario" name="comentario" placeholder="Deja aquí tu comentario"></textarea>
         <input type="button" id="boton-enviar-comentario" class="btn btn-primary" value="Enviar">
+        <p id="mensaje-comentarios" style="display: none;"></p>
       </form>
-      <p id="error-comentarios" style="display: none;"></p>
+      <div class="spacer"></div>
     </div>
   </div>
-  <div class="spacer"></div>
   <footer>
     <div class="social-links">
       <p>Síguenos en nuestras redes sociales</p>
@@ -191,7 +187,9 @@
     <p style="text-align: center;">Copyright &copy; 2023 - El amigo del peregrino</p>
   </footer>
   <script src="../js/jquery-3.6.4.min.js"></script>
-  <script src="../js/index.js"></script>
   <script src="../js/paradas.js"></script>
+  <script src="../js/sesion.js"></script>
+  <script src="../js/tema.js"></script>
+  <script src="../js/comentarios.js"></script>
 </body>
 </html>
