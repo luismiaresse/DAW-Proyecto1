@@ -39,15 +39,23 @@ IDEAS PARA HACER
 ------------------------------
 DOCUMENTACIÓN:
 
+// ORGANIZACIÓN
 - Inventario de contenido
 - Arquitectura de la información
+- Estructura de ficheros
 
+// DISEÑO DE LA PÁGINA WEB
+- Especificación del proyecto
 - Prototipo manual (sketching)
 - Esqueleto (wireframe)
 - Diseño final (mockup)
 
+// EXPLICACIÓN DEL CÓDIGO
+- Mapas de divisiones y etiquetas
+- Explicación de JavaScript (screenshots del efecto y explicación del código)
+
+// USO DE LA APLICACIÓN
 - Casos de uso
 - Mapa de navegación (web)
 - Story board (casos de uso + navegación, en pasos)
 
-- Estructura de ficheros
