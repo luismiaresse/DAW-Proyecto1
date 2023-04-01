@@ -36,47 +36,60 @@
     </div>
   </nav>
   <div class="spacer"></div>
-  <div id="content">
-    <div id="login-container">
-      <form id="login-form">
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="login-email" required placeholder="Email">
-        <label for="password">Contraseña:</label>
-        <input type="password" id="login-password" required placeholder="Contraseña">
-        <div id="campos-registro">
-          <label for="password">Repite contraseña:</label>
-          <input type="password" id="login-password-repeat" required placeholder="Repite contraseña">
-          <label for="name">Nombre de usuario:</label>
-          <input type="text" id="login-name" required placeholder="Nombre de usuario">
-        </div>
-        <p id="error-login" style="display: none;"></p>
-      </form>
-      <div class="spacer"></div>
-    </div>
+  <div id="login-container">
+    <form id="login-form">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="login-email" required placeholder="Email">
+      <label for="password">Contraseña:</label>
+      <input type="password" id="login-password" required placeholder="Contraseña">
+      <div id="campos-registro">
+        <label for="password">Repite contraseña:</label>
+        <input type="password" id="login-password-repeat" required placeholder="Repite contraseña">
+        <label for="name">Nombre de usuario:</label>
+        <input type="text" id="login-name" required placeholder="Nombre de usuario">
+      </div>
+      <p id="error-login" style="display: none;"></p>
+    </form>
+    <div class="spacer"></div>
+  </div>
+  <div id="content" style="text-align: center; margin-left: 30%; margin-right: 30%;">
     <h1>Sobre nosotros</h1>
-    <br>
-    <h2>¿Qué es esto?</h2>
-    <p>El amigo del peregrino es un proyecto que nace con la intención de ayudar a los peregrinos que se dirigen a Santiago de Compostela. 
-      En esta página encontrarás información sobre las paradas más importantes del camino de Santiago, así como consejos y recomendaciones 
-      para que tu viaje sea lo más cómodo y agradable posible. Elegimos los lugares de interés si cumplen con los siguientes requisitos:
-    <ul>
-      <li>Que estén a menos de 10 km de la parada</li>
-      <li>Que sean de calidad</li>
-      <li>Que sean accesibles</li>
-      <li>Que tengan buenas críticas en Google Maps y en suficiente cantidad</li>
-    </ul></p>
-    <br>
-    <h2>¿Quiénes somos?</h2>
-    <p>Somos un grupo de estudiantes de la Universidad de Santiago de Compostela </p>
-    <br>
-    <h2>¿Cómo se ha hecho?</h2>
-    <p>El amigo del peregrino ha sido creado con HTML, CSS y JavaScript. Para el diseño de la página hemos utilizado Bootstrap,
-       y hemos empleado librerías como JQuery o AJAX, entre otros. Puedes echar un vistazo en el apartado de 'Colaboradores y tecnologías'.</p>
-    <br>
-    <h2>Colaboradores y tecnologías</h2>
+    <hr>
+    <div id="sobre-nosotros">
+      <h2>¿Qué es esto?</h2>
+      <p>El amigo del peregrino es un proyecto que nace con la intención de ayudar a los peregrinos que se dirigen a Santiago de Compostela. 
+        En esta página encontrarás información sobre las paradas más importantes del camino de Santiago, así como consejos y recomendaciones 
+        para que tu viaje sea lo más cómodo y agradable posible. Elegimos los lugares de interés si cumplen con los siguientes requisitos:
+        <ol style="text-align: left;">
+          <li>Que estén a menos de 10 km de la parada</li>
+          <li>Que sean de calidad</li>
+          <li>Que sean accesibles</li>
+        <li>Que tengan buenas críticas en Google Maps y en suficiente cantidad</li>
+      </ol></p>
+    </div>
+    <hr>
+    <div id="como-funciona">
+      <h2>¿Cómo funciona?</h2>
+      <p>El amigo del peregrino está dividido en tres partes: la página principal, la página de cada parada y la página de 'Sobre nosotros'. 
+        Para iniciar sesión, pulsa en el botón 'Iniciar sesión' en la barra de navegación y rellena los campos necesarios. Si no tienes una 
+        cuenta, puedes registrarte pulsando en el botón 'Registrarse'. Una vez iniciada la sesión, aparecerá tu nombre de usuario en la barra.
+    </div>
+    <hr>
+    <div id="quienes-somos">
+      <h2>¿Quiénes somos?</h2>
+      <p>Somos un grupo de estudiantes de la Universidad de Santiago de Compostela que hemos creado esta página como proyecto para la asignatura de Desarrollo de Aplicaciones Web. 
+    </div>
+    <hr>
+    <div id="como-se-hizo">
+      <h2>¿Cómo se ha hecho?</h2>
+      <p>El amigo del peregrino ha sido creado con HTML, CSS y JavaScript. Para el diseño de la página hemos utilizado Bootstrap,
+         y hemos empleado librerías como JQuery o AJAX, entre otros. Puedes echar un vistazo en el apartado de 'Colaboradores y tecnologías'.</p>
+    </div>
+    <hr>
     <div id="colaboradores">
+      <h2>Colaboradores y tecnologías</h2>
       <p>Este proyecto ha sido posible gracias a:</p>
-      <ul>
+      <ul style="text-align: left;">
         <li><a href="https://github.com/luismiaresse" target="_blank">Colaborador: Luis Miguel Ares Seijas</a></li>
         <li><a href="https://github.com/alejandro-aybar" target="_blank">Colaborador: Alejandro Aybar</a></li>
         <!-- JQuery -->
@@ -89,6 +102,11 @@
         <li><a href="https://developers.google.com/maps" target="_blank">Google Maps API</a></li>
         <!-- Google Fonts -->
         <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+    </div>
+    <hr>
+    <div id="codigo-proyecto">
+      <h2>Código del proyecto</h2>
+      <p>Si quieres ver el código del proyecto, puedes hacerlo en <a href="https://github.com/luismiaresse/DAWProyecto" target="_blank">este repositorio de GitHub</a>.</p>
     </div>
   </div>
   <footer>

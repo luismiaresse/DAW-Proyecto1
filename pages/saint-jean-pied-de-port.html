@@ -36,23 +36,24 @@
       </ul>
     </div>
   </nav>
+  <div id="login-container">
+    <div class="spacer"></div>
+    <form id="login-form">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="login-email" required placeholder="Email">
+      <label for="password">Contraseña:</label>
+      <input type="password" id="login-password" required placeholder="Contraseña">
+      <div id="campos-registro">
+        <label for="password">Repite contraseña:</label>
+        <input type="password" id="login-password-repeat" required placeholder="Repite contraseña">
+        <label for="name">Nombre de usuario:</label>
+        <input type="text" id="login-name" required placeholder="Nombre de usuario">
+      </div>
+      <p id="error-login" style="display: none;"></p>
+    </form>
+    <div class="spacer"></div>
+  </div>
   <div class="content">
-    <div id="login-container">
-      <form id="login-form">
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="login-email" required placeholder="Email">
-        <label for="password">Contraseña:</label>
-        <input type="password" id="login-password" required placeholder="Contraseña">
-        <div id="campos-registro">
-          <label for="password">Repite contraseña:</label>
-          <input type="password" id="login-password-repeat" required placeholder="Repite contraseña">
-          <label for="name">Nombre de usuario:</label>
-          <input type="text" id="login-name" required placeholder="Nombre de usuario">
-        </div>
-        <p id="error-login" style="display: none;"></p>
-      </form>
-      <div class="spacer"></div>
-    </div>
     <div class="info-general">
       <figure class="info-imagen">
         <img src="../img/saintjean/portada.jpg" alt="Saint Jean Pied de Port">
