@@ -1,12 +1,17 @@
 
-.info-general{
+
+#content {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.info-imagen{
   position: relative;
   text-align: center;
 }
 
 .info-general p {
   text-align:center;
-  font-size:small;
   padding: 20px;
 }
 
@@ -26,22 +31,27 @@
   width: 100%;
 }
 
+.sitios-parada figure {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sitios-parada, #comentarios {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
 .sitios-parada img{
   height: 250px;
   width:350px;  
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.sitios-parada h5{
-  padding-left: 50px;
-  display: block;
-}
-
-.col-sm{
-  padding:10px;
-}
 
 .sitios-parada p{
   text-align: center;

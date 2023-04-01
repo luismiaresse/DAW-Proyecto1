@@ -26,6 +26,7 @@ h1,h2,h3,h4,h5,h6 {
 nav {
   background: var(--nav-background);
   position: sticky;
+  display: flex;
   top: 0;
   color: white;
   line-height: var(--nav-size);
@@ -36,6 +37,7 @@ nav ul {
   display: block;
   float: right;
   margin-right: var(--nav-margins);
+  margin-bottom: 0;
 }
 
 nav ul li {
@@ -136,6 +138,10 @@ nav a:hover {
   .boton-tema {
     display: none;
   }
+}
+
+.intro {
+  text-align: center;
 }
 
 #login-container {
