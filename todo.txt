@@ -47,11 +47,11 @@ A - Arquitectura de la información
 // DISEÑO DE LA PÁGINA WEB
 L - Especificación del proyecto
 A - Prototipo manual (sketching)
-L - Esqueleto (wireframe)
+(H) - Esqueleto (wireframe)
 A - Diseño final (mockup)
 
 // EXPLICACIÓN DEL CÓDIGO
-L - Mapas de divisiones y etiquetas
+(H) - Mapas de divisiones y etiquetas
 A - Explicación de JavaScript (screenshots del efecto y explicación del código)
 
 // USO DE LA APLICACIÓN
