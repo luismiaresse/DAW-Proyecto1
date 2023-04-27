@@ -88,7 +88,15 @@ function getUsersXML(callback) {
       callback(xmlDoc);
     }
   }
-  xhttp.open("GET", "../ajax/users.xml", true);
+  // Comprobar si estamos en index.html o en cualquier parada
+  var path = window.location.pathname;
+  var fileName = path.split("/").pop();
+  if (fileName == '' || fileName == "index.html") {
+    var rutaAjax = "./ajax/users.xml";
+  } else {
+    var rutaAjax = "../ajax/users.xml";
+  }
+  xhttp.open("GET", rutaAjax, true);
   xhttp.send();
 }
 

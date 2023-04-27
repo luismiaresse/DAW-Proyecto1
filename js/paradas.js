@@ -12,13 +12,13 @@ function cargarMasSitios() {
   let lista = document.getElementsByClassName("sitios-ocultos")[0];
   let primero = document.createElement("div");
   primero.classList.add("col-sm");
-  primero.innerHTML = "<figure><h5>La Galiciana (Santiago)</h5><a><img src='../img/santiago/la-galiciana.jpg' alt='La Galiciana'></a><p>Disfruta de los mejores sabores santiagueses.</p></figure>";
+  primero.innerHTML = "<figure><h5>La Galiciana (Santiago)</h5><a><img src='./img/santiago/la-galiciana.jpg' alt='La Galiciana'></a><p>Disfruta de los mejores sabores santiagueses.</p></figure>";
   let segundo = document.createElement("div");
   segundo.classList.add("col-sm");
-  segundo.innerHTML = "<figure><h5>Bar Gaucho (Pamplona)</h5><a><img src='../img/pamplona/bar-gaucho.JPG' alt='Bar Gaucho'></a><p>Uno de los máximos exponentes de la cocina en miniatura navarra.</p></figure>";
+  segundo.innerHTML = "<figure><h5>Bar Gaucho (Pamplona)</h5><a><img src='./img/pamplona/bar-gaucho.JPG' alt='Bar Gaucho'></a><p>Uno de los máximos exponentes de la cocina en miniatura navarra.</p></figure>";
   let tercero = document.createElement("div");
   tercero.classList.add("col-sm");
-  tercero.innerHTML = "<figure><h5>Casa Mando (León)</h5><a><img src='../img/leon/casa-mando.jpg' alt='Casa Mando'></a><p>Productos de la tierra de alta calidad.</p></figure>";
+  tercero.innerHTML = "<figure><h5>Casa Mando (León)</h5><a><img src='./img/leon/casa-mando.jpg' alt='Casa Mando'></a><p>Productos de la tierra de alta calidad.</p></figure>";
   lista.appendChild(primero);
   lista.appendChild(segundo);
   lista.appendChild(tercero);
@@ -108,7 +108,15 @@ function setImageLinks() {
 
   console.log(nombreLocal)
 
-  fetch('../ajax/links.json')
+  // Comprobar si estamos en index.html o en cualquier parada
+  var path = window.location.pathname;
+  var fileName = path.split("/").pop();
+  if (fileName == '' || fileName == "index.html") {
+    var rutaAjax = "./ajax/links.json";
+  } else {
+    var rutaAjax = "../ajax/links.json";
+  }
+  fetch(rutaAjax)
   .then(response => response.json())
   .then(data => $(this).parent().attr('href', obtenerLink(data, nombreLocal)))
 }

@@ -43,5 +43,9 @@ $("#boton-enviar-comentario").click(() => {
   } else {
     $("#mensaje-comentarios").text(successText);
     $("#mensaje-comentarios").css(successStyle);
+    // Limpiar campos
+    comentariosNombre.val("");
+    comentariosCorreo.val("");
+    comentariosComentario.val("");
   }
 });
